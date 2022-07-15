@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Noto+Sans+JP:wght@400;700;900&family=Lato:wght@700&family=Oswald:wght@200&family=Roboto:wght@400;700&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    padding:0 20px 0;
+    top:0;
+    background: #fff;
+}
+.inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+}
+.logo{
+    width: 110px;
+    position: relative;
+    top:10px;
+    
+}
+.menu{
+    width: calc(100% - 110px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:30px;
+}
+.gnavi{
+    width: calc(100% - 342px);
+    max-width: 654px;
+}
+.gnavi ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.gnavi ul li a{
+    color: #000;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    font-size:14px;
+    letter-spacing: 0.01em;
+    font-weight: bold;
+    position: relative;
+}
+.gnavi ul li a::before{
+    content:"";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius:50%;
+    background: url("./assets/ar.svg") center left 6px/4px 7px no-repeat ;
+    left:-25px;
+    top:2px;
+
+}
+.gnavi ul li a:hover:before{
+    background: #E59601  url("./assets/ar.svg") center left 6px/4px 7px no-repeat;
+    border: 1px solid #E59601;
+    transition: 0.3s;
+}
+.contact{
+    display: flex;
+    align-items: center;
+}
+.phone{
+    display: block;
+    margin-left:50px;
+}
+.phone a{
+    margin: 0;
+    font-size:22px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    color:  #000;
+    text-decoration: none;
+    position: relative;
+    padding-left: 30px;
+}
+.phone a:hover{
+    color:#E59601;
+    transition: 0.3s;
+}
+.phone a:before{
+    content: "";
+    position: absolute;
+    width: 14.75px;
+    height: 14.75px;
+    top:6px;
+    left:3px;
+    background: url("./assets/Group\ 2271.png");
+}
+.phone a:hover:before{
+    content: "";
+    position: absolute;
+    width: 14.75px;
+    height: 14.75px;
+    top:6px;
+    left:3px;
+    background: url("./assets/Group\ 2271\ or.png");
+    transition: 0.3s;
+}
+.phone p{
+    font-size: 10px;
+    font-family:'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    margin:0;
+}
+.contact img{
+    margin-left:30px;
+    width: 92px;
+    position: relative;
+    top:10px;
+}
+.container{
+    margin-top:92px;
+}
+.title{
+    display: flex;
+    color:#fff;
+    font-size: 38px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family:'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height:216px;
+    background: url('./assets/Group\ 27463.png');
+    margin:0 auto;
+}
+.breadcrumb{
+    width: 100%;
+    padding:10px 0 0 20px;
+}
+.breadcrumb ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    color: #A0A0A0;
+    font-size: 12px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+.breadcrumb ul li a{
+    position: relative;
+    color: #A0A0A0;
+    padding-right:30px;
+}
+.breadcrumb ul li a:after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid #A0A0A0;
+    border-right: 1px solid #A0A0A0;
+    transform: rotate(45deg);
+    width: 4px;
+    height: 4px;
+    top:7.5px;
+    right:15px;
+}
+.section{
+    display: flex;
+    width: 100%;
+    margin-top:35px;
+    height: 1600px;
+}
+.scroll-bar{
+    width: 20%;
+    position: relative;
+}
+.scroll-bar .list{
+    position: absolute;
+}
+.scroll-bar .list ul{
+    align-items: center;
+    list-style: none;
+}
+.scroll-bar .list ul li{
+    position: relative;
+    width: 175px;
+    color:#fff;
+    font-size:16px;
+    letter-spacing: 0.1em;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    background-color: #000;
+    padding: 10px 0 10px 15px;
+    border: 1px solid #000;
+    margin-bottom:10px;
+}
+.scroll-bar .list ul li:after{
+    content:"";
+    position: absolute;
+    border-bottom:1px solid #fff;
+    width:20px;
+    right:0;
+    top: 50%;
+}
