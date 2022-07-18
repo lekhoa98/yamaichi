@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="municipality.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -34,7 +35,9 @@
         </div>
     </header>
     <main class="container">
-        <h1 class="title">自治体関係者様へ</h1>
+        <div class="bg">
+        <h1 class="title"><span>自治体関係者様へ</span></h1>
+    </div>
         <div class="breadcrumb">
             <ul>
                 <li><a href="https://www.google.com.vn">TOP</a></li>
@@ -43,19 +46,212 @@
         </div>
         <div class="section">
             <div class="scroll-bar">
-                <div class="list">
+                <div id="scroll" class="list">
                     <ul>
-                        <li>開発の経緯</li>
-                        <li>導入のメリット</li>
-                        <li>仕様・オプション</li>
-                        <li>永年保証</li>
+                        <button class="btn"><li class="btn-text"><a href="#anchor1">開発の経緯</a></li></button>
+                        <button class="btn"><li class="btn-text"><a href="#anchor2">導入のメリット</a></li></button>
+                        <button class="btn"><li class="btn-text">仕様・オプション</li></button>
+                        <button class="btn"><li class="btn-text">永年保証</li></button>
                     </ul>
                 </div>
             </div>
             <div class="content">
-
+                <h2 id="anchor1" class="tlt">
+                    開発の経緯
+                </h2>
+               <div class="item1">
+                <div class="par1">
+                    <div class="par1-left">
+                        <h3>大規模災害へのボランティア活動で気づいた<br>「ハイエース」の可能性</h3>
+                        <div class="txt">
+                            ダミー私たちは建材・建築屋としての事業をベースにした会社です。<br>
+                            そのネットワークで阪神淡路大震災、東日本大震災にもボランティア<br>
+                            活動をした経験があります。ボランティアに参加して活動拠点にする<br>
+                            には、避難拠点だけではなく、ボランティア活動のベース拠点として<br>
+                            もハイエースがベストだという考えに至りました。
+                        </div>
+                    </div>
+                    <div class="par1-right">
+                        <img src="./assets/3137676_m.png" alt="">
+                    </div>
+                </div>
+                <div class="par2">
+                    <div class="par2-left">
+                        <h3>高級なキャンピングカーを<br>導入することの難しさ</h3>
+                        <div class="txt">
+                            ダミー避難所としてのキャンピングカー「キャブコン」が、災害対策<br>
+                            のために一部の自治体で導入が進められています。しかし避難民が数<br>
+                            活動をした経験があります。ボランティアに参加して活動拠点にする<br>
+                            千人規模となる現場で、全ての人が温水シャワーやエアコンが搭載さ<br>
+                            れた高級キャンピングカーを利用することは、非現実的です。
+                        </div>
+                    </div>
+                    <div class="par2-right">
+                        <img src="./assets/Mask Group 454.png" alt="">
+                    </div>
+                </div>
+                <div class="block1">
+                    <h4>避難所として高級なキャンピングカーを導入することの問題点</h4>
+                    <div class="img">
+                    <img src="./assets/img3.jpeg" alt="避難所として高級キャンピングカーを導入する場合はさまざまな問題が懸念されます">
+                </div>
+                <div class="block1-list">
+                    <ul>
+                        <li>
+                            <div class="txt1">
+                                コストの問題
+                            </div>
+                            <div class="txt2">
+                                1台あたり1000万円を超える
+                            </div>
+                        </li>
+                        <li>
+                            <div class="txt1">
+                                利用人数の限界
+                            </div>
+                            <div class="txt2">
+                                一部の方だけが利用できる場合も別の混乱を招く恐れ
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="txt1">
+                                機動性の問題
+                            </div>
+                            <div class="txt2">
+                                小さな道路を通りづらい、駐車スペースをとってしまう
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="txt1">
+                                モラルの問題
+                            </div>
+                            <div class="txt2">
+                                ボランティアスタッフが家庭用エアコン付き、シャワー付きのキャンピングカーでの参加は、<br>
+                                被災者感情を逆なでる
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="txt">
+                    ダミー避難所としてのキャンピングカー「キャブコン」が、災害対策のために一部の自治体で導入が進められています。し<br>
+                    かし避難民が数千人規模となる現場で、全ての人が温水シャワーやエアコンが搭載された高級キャンピングカーを利用する<br>
+                    ことは、非現実的です。
+                </div>
+               </div>
+               <h2 id="anchor2" class="tlt">
+                導入のメリット
+            </h2>
+            <div class="item2">
+                <div class="list1">
+                    <div class="par1">
+                        <h3>キャンピングカーに比べ低コスト</h3>
+                        <div class="txt">
+                            １台1000万円以上もするキャンピングカーを購入する予<br>
+                            算を確保することは、簡単なことではありません。しかし<br>
+                            GL BASEなら、ハイエース（対象車種）と合わせても●●<br>
+                            万円程度となり、そのハードルはぐっと下がるはずです。
+                        </div>
+                        <img src="./assets/pig.svg">
+                    </div>
+                    <div class="par2">
+                        <h3>登録手続きが容易にできる</h3>
+                        <div class="txt">
+                            GL BASEは「ハイエース スーパーGL」に載せるだけ。<br>
+                            キャンパーキットは一般的な荷物扱いとなるため、ナン<br>
+                            バー変更は不要。また、シート交換、陸運局の構造変更、<br>
+                            記載変更などの煩わしい手続きも一切必要ありません。
+                        </div>
+                        <img src="./assets/reminder.svg">
+                    </div>
+                </div>      
+                <div class="list2">
+                    <div class="par1">
+                        <h3>仕様変更の手軽さ</h3>
+                        <div class="txt">
+                            基本的にはハイエースなので、荷室のキャンピングキット<br>
+                            をおろせば、セカンドシートを折りたたんで元の商用車の<br>
+                            仕様に戻り、長尺の荷物・体積の大きな荷物を載せること<br>
+                            もできます。
+                        </div>
+                        <img src="./assets/tool.svg">
+                    </div>
+                    <div class="par2">
+                        <h3>保管・輸送のしやすさ</h3>
+                        <div class="txt">
+                            GL BASEを使わない時は、ユニットを分解してコンパクト<br>
+                            にまとめて保管できるのも大きな利点です。つまり災害時<br>
+                            には分解して陸送できるため、現地のハイエースを利用し<br>
+                            てGL BASEを活用することができます。
+                        </div>
+                        <img src="./assets/task.svg">
+                    </div>
+                </div>    
+                <div class="list3">
+                    <div class="par1">
+                        <h3>法人への協力要請のしやすさ</h3>
+                        <div class="txt">
+                            キャンピングカーを何十台も災害対策車両として常時確保<br>
+                            するには、固定資産やスペース上の問題がありますが、ハ<br>
+                            イエースであれば所有できる法人も多いです。通常時はハ<br>
+                            イエースを法人に所有していただけるため、災害時のみ市<br>
+                            町村に貸し出していただくよう協力要請および導入のため<br>
+                            の助成がしやすくなります。<br>
+                            （具体例は下記参照）
+                        </div>
+                        <img src="./assets/building.svg">
+                    </div>
+                    <div class="par2">
+                        <h3>救助活動の拠点以外としても利用可</h3>
+                        <div class="txt">
+                            <ul>
+                                <li>
+                                    災害ボランティアのベース拠点
+                                </li>
+                                <li>
+                                    医療施設などの待機場所や感染症などの受付
+                                </li>
+                                <li>
+                                    感染症などの感染者の方の待機スペース
+                                </li>
+                                <li>
+                                    普段のイベント業務（営業拠点、作業拠点、受付、休<br>
+                                    憩空間）
+                                </li>
+                                <li>
+                                    テキストテキストテキストテキストなど、様々な状況で<br>
+                                    利用できるよう想定しています。
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="./assets/reminder.svg">
+                    </div>
+                </div>
+                <div class="txt">
+                    ＜法人との連携の具体例＞
+                </div>
+                <div class="line">
+                    <p>全国に十カ所以上拠点を持つ会社に、本社の倉庫で10台分のGL BASEを保管していただきます。</p>
+                    <p>それら（ユニット１台あたり80kg、合計800kg）をハイエース１台に載せて現地へと輸送を行います。</p>
+                    <p>現地にある支店のハイエースを使用していただくことで、50名分の臨時の避難所として、防災拠点やボランティア活動の拠点になります。<br>
+                        （※GL BASE搭載ハイエース１台あたり5名収容可能とする）</p>
+                </div>      
+            </div>
             </div>
         </div>
     </main>
 </body>
+<script>
+$(function(){
+  $(window).scroll(function(){
+    var aTop = $('#scroll').height();
+    if($(this).scrollTop()>=aTop){
+        $('#scroll').css({"position":"fixed","top":"92px"});
+    }
+    else{
+        $('#scroll').css({"position":"absolute","top":"0"});
+    }
+  });
+});
+</script>
 </html>
