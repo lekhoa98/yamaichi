@@ -503,6 +503,9 @@
             </div>
         </div>
         </div>
+        <a id="scroll-top" class="scrolltop">
+            <p>PAGETOP</p>
+        </a>
     </main>
 </body>
 <script>
@@ -516,6 +519,17 @@
                 $('#scroll').css({ "position": "absolute", "top": "0" });
             }
         });
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+            $('#scroll-top').fadeIn();
+        } else {
+            $('#scroll-top').fadeOut();
+        }
+    });
+
+    $("#scroll-top").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
     });
 </script>
 

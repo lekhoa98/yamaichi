@@ -1047,3 +1047,54 @@ button {
     line-height: 34px;
 
 }
+
+.scrolltop {
+    position: fixed;
+    display: inline-block;
+    z-index: 999;
+    width: 12px;
+    bottom: 30px;
+    right: 35px
+}
+
+#scroll-top {
+    display: none;
+    cursor: pointer;
+}
+
+#scroll-top:hover {
+    color: #E59601;
+    transition: all 0.3s;
+}
+
+.scrolltop p {
+    display: inline-block;
+    writing-mode: vertical-lr;
+    font-size: 10px;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    padding-top: 68px;
+    position: relative;
+}
+
+.scrolltop p:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 61px;
+    left: calc(50% - 1px);
+    background-color: #000;
+    top: 0;
+}
+
+.scrolltop p:hover:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 61px;
+    left: calc(50% - 1px);
+    background-color: #E59601;
+    top: 0;
+    transition: all 0.3s;
+}
