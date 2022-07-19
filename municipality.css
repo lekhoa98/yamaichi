@@ -1052,9 +1052,10 @@ button {
     position: fixed;
     display: inline-block;
     z-index: 999;
-    width: 12px;
+    width: 10px;
     bottom: 30px;
-    right: 35px
+    right: 35px;
+    margin:0;
 }
 
 #scroll-top {
