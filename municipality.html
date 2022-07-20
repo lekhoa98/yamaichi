@@ -31,7 +31,7 @@
                         <a href="https://www.google.com.vn">050-3554-6370</a>
                         <p>月～土 9:00～17:00(休：第２第４土,日,祝)</p>
                     </div>
-                    <img src="./assets/Group 27461.svg">
+                    <div class="img"></div>
                 </div>
             </div>
         </div>
@@ -511,7 +511,7 @@
                                 質問タイトルどうして国が代わってローンを返済してもらえるのですか？
                             </p>
                             <div class="btn-dropdown">
-                                <button class="dropdown">
+                                <button id="dropdown" class="dropdown">
                                     <span></span>
                                     <span></span>
                                 </button>
@@ -524,23 +524,133 @@
                             きず、債務者自身による返済が必要となりますので延滞しないようにする注意が必要です。<a>リンクを貼ることもでき<br>ます。</a>
                         </div>
                     </div>
+                    <div class="qa1">
+                        <div style="display:flex">
+                            <p class="ques">
+                                質問タイトル家の購入を考えています。いざというときは家を売ればローンを返せると思っ<br>
+                                ていますが、間違いでしょうか？
+                            </p>
+                            <div class="btn-dropdown">
+                                <button class="dropdown">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="before-footer">
+            <div class="contact-footer">
+                <div class="ttl">
+                    <p>お問い合わせ</p>
+                    <p>製品に関するご質問など、お気軽にお問い合わせください。</p>
+                </div>
+                <div class="inside-contact">
+                    <div class="left">
+                        <p>お電話からのお問い合わせ</p>
+                        <p>050-3554-6370</p>
+                        <p>月～土 9:00～17:00（休：第２第４土,日,祝）</p>
+                    </div>
+                    <div class="right">
+                        <p>Webからのお問い合わせ</p>
+                        <div class="btn">
+                            <span>お問い合わせフォーム</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="/assets/Mask Group 60.png" alt="">
         </div>
+        <footer>
+            <div class="footer">
+                <div class="inside">
+                    <div class="left">
+                        <div class="left-inside1">
+                            <img src="/assets/logo-footer.png" alt="">
+                            <div style="display:block; position:relative; left:-30px">
+                                <div class="ttl">
+                                    ジーエル ベース<span>株式会社山一建材</span>
+                                </div>
+                                <div class="txt">
+                                    〒500-8879　<br>
+                                    岐阜市徹明通8丁目2番地<br>
+                                    TEL.058-253-5353　FAX.058-253-5356
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-inside2">
+                            <div class="btn">
+                                <span class="b-one">自治体関係者様へ</span>
+                            </div>
+                            <div class="btn">
+                                <span class="b-two">販売代理店募集</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right-inside1">
+                            <ul>
+                                <li>
+                                    HOME
+                                </li>
+                                <li>
+                                    仮）暮らし方提案
+                                </li>
+                                <li>
+                                    製品情報
+                                </li>
+                                <li>
+                                    開発ストーリー
+                                </li>
+                                <li>
+                                    よくあるご質問
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-inside2">
+                            <ul>
+                                <li>
+                                    お知らせ
+                                </li>
+                                <li>
+                                    会社概要
+                                </li>
+                                <li>
+                                    お問い合わせ
+                                </li>
+                                <li>
+                                    プライバシーポリシー
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img1"></div>
+                        <div class="img2"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <a id="scroll-top" class="scrolltop">
             <p>PAGETOP</p>
         </a>
     </main>
 </body>
 <script>
+
     $(function () {
         $(window).scroll(function () {
+            var heights = $("div.scroll-bar").height();
             var aTop = $('#scroll').height();
             if ($(this).scrollTop() >= aTop) {
                 $('#scroll').css({ "position": "fixed", "top": "92px" });
             }
-            else {
+            if ($(this).scrollTop() < aTop) {
+                $('#scroll').css({ "position": "absolute", "top": "0" });
+            }
+            if ($(this).scrollTop() >= heights) {
                 $('#scroll').css({ "position": "absolute", "top": "0" });
             }
         });
@@ -557,7 +667,7 @@
     $("#scroll-top").click(function () {
         $("html, body").animate({ scrollTop: 0 }, 1000);
     });
-    $(".dropdown").click(function () {
+    $("#dropdown").click(function () {
         $("#ans").slideDown("fast", function () {
             $(".dropdown").toggleClass("active");
             if ($(".dropdown").hasClass("active")) {

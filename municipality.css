@@ -94,6 +94,7 @@ body {
 .phone {
     display: block;
     margin-left: 50px;
+    position: relative;
 }
 
 .phone a {
@@ -140,11 +141,24 @@ body {
     margin: 0;
 }
 
-.contact img {
+.contact .img {
+    background: url("/assets/Group\ 27461.svg");
     margin-left: 30px;
     width: 92px;
+    height: 92px;
     position: relative;
     top: 10px;
+}
+
+.contact .img:hover {
+    background: url("/assets/contact-ac.svg");
+    margin-left: 30px;
+    width: 92px;
+    height: 92px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .container {
@@ -315,6 +329,12 @@ body {
         margin-left: 20%;
         margin-right: 20%
     }
+
+    .footer .inside {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
 }
 
 .item1 .par1,
@@ -1119,11 +1139,11 @@ button {
 
 .content .faq .qa1 {
     border-top: 1px solid #D8D8D8;
-    border-bottom: 1px solid #D8D8D8;
     padding: 15px;
 }
 
 .content .faq .qa1 .ques {
+    width: 95%;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -1131,6 +1151,7 @@ button {
     line-height: 32px;
     margin-bottom: 20px;
     position: relative;
+    padding-left: 50px;
 }
 
 .content .faq .qa1 .ans {
@@ -1155,6 +1176,8 @@ button {
     font-size: 32px;
     font-weight: bold;
     color: #E59601;
+    position: absolute;
+    left: 0;
 }
 
 .content .faq .qa1 .ans::before {
@@ -1168,7 +1191,7 @@ button {
 
 .content .faq .qa1 .btn-dropdown {
     display: flex;
-    width: 27.5%;
+    width: 5%;
     justify-content: flex-end;
     align-items: center;
 }
@@ -1191,7 +1214,7 @@ button {
     top: 20%;
     bottom: 20%;
     width: 5%;
-    left: 48%;
+    left: 49%;
 }
 
 .content .faq .qa1 .btn-dropdown .dropdown span:last-child {
@@ -1208,4 +1231,369 @@ button {
 .content .faq .qa1 .btn-dropdown .dropdown.active span:last-child {
     left: 50%;
     right: 50%;
+}
+
+.container .before-footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.before-footer .contact-footer {
+    width: 100%;
+    max-width: 1070px;
+    background-color: #E59601;
+    margin: 0 1%;
+    padding: 80px 100px;
+}
+
+.before-footer .contact-footer .ttl {
+    width: 100%;
+    text-align: center;
+}
+
+.before-footer .contact-footer .ttl p:first-child {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    line-height: 81px;
+    color: #fff;
+    margin: 0;
+}
+
+.before-footer .contact-footer .ttl p:last-child {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 34px;
+    color: #fff;
+    margin: 0;
+}
+
+.before-footer .contact-footer .inside-contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.before-footer .contact-footer .inside-contact .left,
+.before-footer .contact-footer .inside-contact .right {
+    width: 42.7%;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.before-footer .contact-footer .inside-contact .left:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.before-footer .contact-footer .inside-contact .left p:nth-child(1) {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    line-height: 40px;
+    color: #fff;
+    margin: 10px;
+}
+
+.before-footer .contact-footer .inside-contact .left p:nth-child(2) {
+    font-family: 'Lato', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 55px;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.before-footer .contact-footer .inside-contact .left p:nth-child(3) {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 14px;
+    color: #fff;
+    margin: 10px 0 15px 0;
+
+}
+
+.before-footer .contact-footer .inside-contact .left p:nth-child(2):before {
+    content: "";
+    position: absolute;
+    background: url("/assets/Group\ 1969.svg");
+    width: 30.91px;
+    height: 31.14px;
+    top: 14px;
+    left: 37px;
+}
+
+.before-footer .contact-footer .inside-contact .right p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    line-height: 40px;
+    color: #fff;
+    margin: 10px;
+}
+
+.before-footer .contact-footer .inside-contact .right .btn {
+    width: 100%;
+    max-width: 310px;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.before-footer .contact-footer .inside-contact .right .btn span {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 34px;
+    color: #fff;
+    mix-blend-mode: difference;
+    position: relative;
+}
+
+.before-footer .contact-footer .inside-contact .right .btn span:after {
+    content: "";
+    position: absolute;
+    border: 1px solid #fff;
+    right: -67px;
+    top: calc(50% - 1px);
+    width: 21px;
+}
+
+.before-footer img {
+    position: absolute;
+    width: 100%;
+    height: 623px;
+    z-index: -1;
+    top: 320px;
+
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: #F2F0E7;
+    background: url("assets/Mask\ Group\ 53.png");
+    position: relative;
+    top: 430px;
+    padding: 60px 40px;
+    justify-content: space-between;
+}
+
+.footer .inside {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .inside .left {
+    width: 100%;
+    max-width: 460px;
+}
+
+.footer .left .left-inside1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left .left-inside1 img {
+    width: 158.88px;
+}
+
+.footer .left .left-inside1 .ttl {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    line-height: 42px;
+}
+
+.footer .left .left-inside1 .ttl span {
+    position: relative;
+    bottom: 2px;
+    left: 13px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    line-height: 42px;
+}
+
+.footer .left .left-inside1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+}
+
+.footer .left .left-inside2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.footer .left .left-inside2 .btn {
+    height: 46px;
+    width: 222px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer .left .left-inside2 .btn span {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 64px;
+    color: #fff;
+    mix-blend-mode: difference;
+    position: relative;
+}
+
+.footer .left .left-inside2 .btn .b-one:after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #fff;
+    width: 15px;
+    top: calc(50% - 1px);
+    right: -41px;
+}
+
+.footer .left .left-inside2 .btn .b-two:after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid #fff;
+    width: 15px;
+    top: calc(50% - 1px);
+    right: -50px;
+}
+
+.footer .inside .right {
+    width: 100%;
+    max-width: calc(100% - 630px);
+    display: flex;
+}
+
+.footer .inside .right .right-inside1,
+.footer .inside .right .right-inside2 {
+    width: 100%;
+    max-width: 223px;
+}
+
+.footer .inside .right .right-inside1 ul,
+.footer .inside .right .right-inside2 ul {
+    list-style: none;
+    margin: 0;
+}
+
+.footer .inside .right .right-inside1 ul li,
+.footer .inside .right .right-inside2 ul li {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 34px;
+    border-bottom: 1px solid #C3BABA;
+    position: relative;
+    padding: 2px 0 2px 24px;
+    cursor: pointer;
+
+}
+
+.footer .inside .right .right-inside1 ul li:before,
+.footer .inside .right .right-inside2 ul li:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background: url("./assets/ar.svg") center left 6px/4px 7px no-repeat;
+    left: 0px;
+    top: 9px;
+}
+
+.footer .inside .right .right-inside1 ul li:hover:before,
+.footer .inside .right .right-inside2 ul li:hover:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 1px solid #E59601;
+    border-radius: 50%;
+    background: url("./assets/ar.svg") center left 6px/4px 7px no-repeat;
+    left: 0px;
+    top: 9px;
+    background-color: #E59601;
+    transition: 0.3s;
+}
+
+.footer .inside .img {
+    width: 100%;
+    max-width: 95px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 35px;
+    right: 170px;
+}
+
+.footer .inside .img img {
+    width: 43px;
+    height: 43px;
+}
+
+.footer .inside .img .img1 {
+    content: "";
+    background: url(assets/icon-fb.svg);
+    width: 43px;
+    height: 43px;
+}
+
+.footer .inside .img .img2 {
+    content: "";
+    background: url(assets/icon-instagram.svg);
+    width: 43px;
+    height: 43px;
+}
+
+.footer .inside .img .img1:hover {
+    content: "";
+    background: url(assets/icon-fb-ac.svg);
+    width: 43px;
+    height: 43px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer .inside .img .img2:hover {
+    content: "";
+    background: url(assets/icon-instagram-ac.svg);
+    width: 43px;
+    height: 43px;
+    transition: 0.3s;
+    cursor: pointer;
 }
