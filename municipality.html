@@ -28,7 +28,7 @@
                 </div>
                 <div class="contact">
                     <div class="phone">
-                        <a href="https://www.google.com.vn">050-3554-6370</a>
+                        <a href="tel:050-355-46370">050-3554-6370</a>
                         <p>月～土 9:00～17:00(休：第２第４土,日,祝)</p>
                     </div>
                     <div class="img"></div>
@@ -645,10 +645,12 @@
             var heights = $("div.scroll-bar").height();
             var aTop = $('#scroll').height();
             if ($(this).scrollTop() >= aTop) {
-                $('#scroll').css({ "position": "fixed", "top": "92px" });
+                $('#scroll').css({ "position": "fixed", "top": "92px", "width": "100%", "max-width": "18%" });
             }
             if ($(this).scrollTop() < aTop) {
-                $('#scroll').css({ "position": "absolute", "top": "0" });
+                var styleObject = $('#scroll').prop('style');
+                styleObject.removeProperty('max-width');
+                $('#scroll').css({ "position": "absolute", "top": "0", "width": "100%" });
             }
             if ($(this).scrollTop() >= heights) {
                 $('#scroll').css({ "position": "absolute", "top": "0" });

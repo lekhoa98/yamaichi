@@ -4,6 +4,10 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -11,9 +15,11 @@ html {
 }
 
 body {
-    box-sizing: border-box;
     margin: 0 auto;
     overflow-x: hidden;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .header {
@@ -39,7 +45,8 @@ body {
 }
 
 .menu {
-    width: calc(100% - 110px);
+    width: 100%;
+    max-width: calc(100% - 110px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -106,6 +113,7 @@ body {
     text-decoration: none;
     position: relative;
     padding-left: 30px;
+    transition: 0.3s
 }
 
 .phone a:hover {
@@ -231,7 +239,8 @@ body {
 }
 
 .scroll-bar {
-    width: 18%;
+    width: 100%;
+    max-width: 18%;
     position: relative;
 }
 
@@ -246,9 +255,13 @@ body {
     margin: 0 auto;
 }
 
+.scroll-bar .list .btn {
+    width: 100%;
+    max-width: 190px;
+}
+
 .scroll-bar .list .btn .btn-text {
     position: relative;
-    width: 190px;
     color: #fff;
     font-size: 16px;
     letter-spacing: 0.1em;
@@ -280,17 +293,19 @@ body {
 
 #scroll {
     height: 304px;
-    width: 18%;
+    width: 100%;
 }
 
 .content {
-    width: 82%;
+    width: 100%;
+    max-width: 82%;
     position: relative;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1366px) {
     .scroll-bar {
-        width: 24%;
+        width: 100%;
+        max-width: 24%;
     }
 }
 
@@ -313,21 +328,22 @@ body {
 .content .item3,
 .content .item4,
 .content .faq {
-    width: 988px;
+    width: 100%;
+    max-width: 967px;
     position: relative;
     margin-top: 20px;
     margin-bottom: 80px;
 }
 
-@media screen and (min-width: 1361px) {
+@media screen and (min-width: 1367px) {
 
     .content .item1,
     .content .item2,
     .content .item3,
     .content .item4,
     .content .faq {
-        margin-left: 20%;
-        margin-right: 20%
+        margin: 0 auto;
+        margin-bottom: 80px;
     }
 
     .footer .inside {
@@ -342,7 +358,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    padding-right: 20px;
 }
 
 .par1 .par1-left,
@@ -379,7 +394,8 @@ body {
 .item1 .block1 {
     background: url('./assets/bg_faq.jpeg') left top/100px 100px repeat;
     padding: 20px 10px;
-    width: 947px;
+    width: 100%;
+    max-width: 967px;
 }
 
 .block1 h4,
@@ -404,6 +420,7 @@ body {
 }
 
 .block1 .img img {
+    width: 100%;
     max-width: 868px;
 }
 
@@ -460,7 +477,8 @@ body {
 }
 
 .content .item2 {
-    width: 967px;
+    width: 100%;
+    max-width: 967px;
 }
 
 .item2 .list1,
@@ -478,7 +496,6 @@ body {
 .list2 .par2,
 .list3 .par1,
 .list3 .par2 {
-    width: 44%;
     border: 1px solid #E59601;
     padding: 30px 20px;
     position: relative;
@@ -496,7 +513,8 @@ body {
     line-height: 40px;
     letter-spacing: 0.1em;
     position: relative;
-    margin-left: 50px;
+    margin: 30px 0 0 50px;
+
 }
 
 .list1 .par1 img,
@@ -508,7 +526,7 @@ body {
     width: 82px;
     position: absolute;
     top: -42px;
-    right: 190px;
+    right: calc(100% - 270px);
 }
 
 .list1 .par1 h3::before {
@@ -591,12 +609,14 @@ body {
     font-weight: 400;
     text-align: justify;
     padding-left: 15px;
+    margin: 20px 10px 0 0;
 
 }
 
 .list3 .par2 .txt ul {
     list-style: none;
     position: relative;
+    padding-left: 23px;
 }
 
 .list3 .par2 .txt ul li {
@@ -860,7 +880,8 @@ button {
 .item3 .block1 .inside .part3 .part3-inside img,
 .item3 .block2 .inside .part1 .part1-inside img,
 .item3 .block2 .inside .part3 .part3-inside img {
-    width: 226px;
+    width: 100%;
+    max-width: 226px;
     margin-top: 10px;
 }
 
@@ -897,7 +918,8 @@ button {
 
 .block3 .inside .part-left img,
 .block3 .inside .part-right img {
-    width: 424px;
+    width: 100%;
+    max-width: 424px;
     margin: 15px 0;
 }
 
@@ -1018,7 +1040,8 @@ button {
 
 .block5 .inside .par .right img {
     margin-top: 10px;
-    width: 319px;
+    width: 100%;
+    max-width: 319px;
 }
 
 .item3 .btn {
@@ -1059,7 +1082,8 @@ button {
 
 .content .item4 img {
     margin-top: 40px;
-    width: 968px;
+    width: 100%;
+    max-width: 968px;
 }
 
 .content .item4 .ttl {
@@ -1242,9 +1266,9 @@ button {
 
 .before-footer .contact-footer {
     width: 100%;
-    max-width: 1070px;
+    max-width: 1270px;
     background-color: #E59601;
-    margin: 0 1%;
+    margin: 0 auto;
     padding: 80px 100px;
 }
 
@@ -1281,7 +1305,8 @@ button {
 
 .before-footer .contact-footer .inside-contact .left,
 .before-footer .contact-footer .inside-contact .right {
-    width: 42.7%;
+    width: 100%;
+    max-width: 49%;
     border: 1px solid #fff;
     padding: 20px 30px;
     text-align: center;
@@ -1332,7 +1357,7 @@ button {
     width: 30.91px;
     height: 31.14px;
     top: 14px;
-    left: 37px;
+    left: calc(50% - 190px);
 }
 
 .before-footer .contact-footer .inside-contact .right p {
