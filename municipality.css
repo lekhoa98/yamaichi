@@ -1489,6 +1489,10 @@ button {
     cursor: pointer;
 }
 
+.footer .left .left-inside2 .btn:before {
+    height: 97%
+}
+
 .footer .left .left-inside2 .btn span {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 16px;
