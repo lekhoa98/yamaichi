@@ -100,7 +100,7 @@ body {
 
 .phone {
     display: block;
-    margin-left: 50px;
+    padding: 0 30px;
     position: relative;
 }
 
@@ -150,17 +150,23 @@ body {
 }
 
 .contact .img {
-    background: url("/assets/Group\ 27461.svg");
-    margin-left: 30px;
+    background-image: url("/assets/Group\ 27461.svg");
     width: 92px;
     height: 92px;
     position: relative;
     top: 10px;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+    .contact .img {
+        width: 84px;
+        height: 84px;
+    }
 }
 
 .contact .img:hover {
     background: url("/assets/contact-ac.svg");
-    margin-left: 30px;
     width: 92px;
     height: 92px;
     position: relative;
