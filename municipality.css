@@ -307,7 +307,9 @@ body {
     height: 304px;
     width: 100%;
 }
-
+.archor-sp{
+    display: none;
+}
 .content {
     width: 100%;
     max-width: 82%;
@@ -385,6 +387,9 @@ body {
     font-weight: bold;
     letter-spacing: 0.1em;
     line-height: 40px;
+}
+.sp{
+    display: none;
 }
 
 .par1-left .txt,
@@ -1630,3 +1635,385 @@ button {
     transition: 0.3s;
     cursor: pointer;
 }
+@media screen and (max-width: 1024px) and (min-width: 768px){
+
+}
+
+@media screen and (max-width: 767px){
+    .pc{
+        display: none;
+    }
+    .header{
+        min-height: 70px;;
+    }
+    .logo{
+        width: 80px;
+    }
+    .logo img{
+        width: 80px;
+    }
+    .inner .menu .gnavi{
+        display: none;
+    }
+    .inner .menu .contact .phone{
+        display: none;
+    }
+    .inner .menu .contact .img{
+        background: url("/assets/Group\ 27466.svg");
+        width: 53px;
+        height: 53px;
+        position: relative;
+    }
+    .container{
+        margin-top: 70px;
+    }
+    .bg .title{
+        font-size: 26px;
+        height: 110px;
+    }
+    .breadcrumb ul{
+        padding-left:0;
+    }
+    .section .scroll-bar{
+        display: none;
+    }
+    .content{
+        max-width: 100%;
+    }
+    .section{
+        display: block;
+    }
+    .archor-sp{
+        margin-top:50px;
+        margin-bottom:70px
+    }
+    .archor-sp ul{
+        border: 1px solid #000;
+        list-style-type: none;
+        padding:0
+    }
+    .archor-sp ul li:not(.ttl){
+        font-size:14px;
+        font-family: 'Noto Sans JP',sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        line-height: 32px;
+        border-top: 1px solid #000;
+        padding: 10px 0 10px 30px;
+        position: relative;
+    }
+    .archor-sp .ttl{
+        font-size: 15px;
+        font-family: 'Noto Sans JP',sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        line-height: 22px;
+        color:#fff;
+        background: #000;
+        padding:15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .archor-sp ul li:not(.ttl):before{
+        content: "";
+        position: absolute;
+        background: url("assets/Path 3603.svg");
+        width: 4.5px;
+        height: 9px;
+        left:16px;
+        top: calc(50% - 4.5px);
+    }
+    .archor-sp .ttl a{
+        position: relative;
+        width: 24px;
+        height: 24px;
+    }
+    .archor-sp .ttl a span{
+        position: absolute;
+        transition: 300ms;
+        background: white;
+    }
+    .archor-sp .ttl p{
+        margin: 0;
+    }
+  #toggle{
+    display: none;
+  }
+    .archor-sp .ttl a span:first-child{
+        top: 20%;
+        bottom: 20%;
+        width: 1%;
+        left: 48%;
+    }
+    .archor-sp .ttl a span:last-child{
+        right: 20%;
+        left: 20%;
+        height: 1%;
+        top: 48%;
+    }
+    .archor-sp .ttl.active-sp a span{
+        transform: rotate(90deg);
+    }
+    .archor-sp .ttl.active-sp a span:last-child{
+        left:50%;
+        right:50%
+    }
+    .content .tlt{
+        height: 95px;
+        justify-content:center;
+        padding:0;
+        font-size:26px;
+    }
+    .item1 .par1, .item1 .par2{
+        flex-wrap: wrap;
+    }
+    .item1 .par1 .par1-left, .item1 .par2 .par2-left{
+        order: 2;
+        padding-left:5px;
+    }
+    .item1 .par1 .par1-right,  .item1 .par2 .par2-right{
+        width: 100%;
+        max-width: 335px;
+        margin: 0 auto;
+    }
+    .item1 .par1 .par1-right img,.item1 .par2 .par2-right img{
+        width: 100%;
+    }
+    .sp{
+        display: block;
+        margin: 0 auto;
+    }
+    .par1-left h3, .par2-left h3{
+        font-size:20px;
+        line-height:34px;
+    }
+    .item1{
+        padding:15px;
+        margin:0 auto
+    }
+    .par1-left .txt, .par2-left .txt{
+        font-size:15px;
+        line-height: 30px;
+        margin-top:25px;
+    }
+    .block1 .img{
+        width: 100%;
+        max-width: 295px;
+        margin: 0 auto;
+    }
+    .block1 .img img{
+        width: 295px;
+    }
+    .block1 h4{
+        font-size:16px;
+        line-height: 28px;
+        text-align: justify;
+        padding: 0 15px;;
+    }
+    .block1-list ul{
+        padding-right:20px;
+    }
+    .block1-list ul li{
+        display: block;
+        font-size:14px;
+        line-height: 26px;
+    }
+    .block1-list .txt1{
+        padding-left: 0;
+    }
+    .block1-list .txt1::before{
+        left: -18px;
+    }
+    .block1-list .txt1::after{
+        display: none;
+    }
+    .item1 .txt{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .item2 .list1, .item2 .list2, .item2 .list3{
+        flex-wrap: wrap;
+        padding:0;
+    }
+    .item2{
+        padding: 0 15px;
+    }
+    .list1 .par1 img, .list1 .par2 img, .list2 .par1 img, .list2 .par2 img, .list3 .par1 img, .list3 .par2 img{
+        width: 58px;
+        height: 58px;
+        top:-32px;
+        right: calc(50% - 32px);
+    }
+    .list1 .par1, .list1 .par2, .list2 .par1, .list2 .par2, .list3 .par1, .list3 .par2{
+        margin-top:30px;
+        margin-bottom:20px;
+        padding-right:0;
+    }
+    .list1 .par1 h3, .list1 .par2 h3, .list2 .par1 h3, .list2 .par2 h3, .list3 .par1 h3, .list3 .par2 h3{
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 25px
+    }
+    .list1 .par1 h3::before{
+        font-size: 26px;
+        left:-26px;
+    }
+    .list1 .par2 h3::before{
+        font-size: 26px;
+        left:-26px;
+    }
+    .list2 .par1 h3::before{
+        font-size: 26px;
+        left:-26px;
+    }
+    .list2 .par2 h3::before{
+        font-size: 26px;
+        left:-26px;
+    }
+    .list3 .par1 h3::before{
+        font-size: 26px;
+        left:-26px;
+    }
+    .list3 .par2 h3::before{
+        font-size: 26px;
+        left:-26px;
+    }
+    .list1 .par1 .txt, .list1 .par2 .txt, .list2 .par1 .txt, .list2 .par2 .txt, .list3 .par1 .txt, .list3 .par2 .txt{
+        font-size: 14px;
+        line-height: 22px;
+        margin: 15px 0 0 0;
+        padding-left: 0;
+        padding-right:20px;
+    }
+    .item2 .txt{
+        font-size:16px;
+        line-height: 28px;
+        margin-top:15px;
+    }
+    .item2 .line{
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .item2 .line p:nth-child(1):before{
+        top:0;
+        font-size: 16px;
+    }
+    .item2 .line p:nth-child(2):before{
+        top:0;
+        font-size: 16px;
+    }
+    .item2 .line p:nth-child(3):before{
+        top:0;
+        font-size: 16px;
+    }
+    .item3 .tlt-item3 h3{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .item3 .tlt-item3{
+        margin:0;
+        padding:0 30px;
+    }
+    .item3 .block1 .tlt h4, .item3 .block2 .tlt h4, .item3 .block3 .tlt h4, .item3 .block4 .tlt h4, .item3 .block5 .tlt h4{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .item3 .block1 .tlt, .item3 .block2 .tlt, .item3 .block3 .tlt, .item3 .block4 .tlt, .item3 .block5 .tlt{
+        height: 91px;
+        padding: 0 25px
+    }
+    .item3 .block1 .inside .part2{
+        order: 1;
+        width: 295px;
+        margin: 20px auto;
+    }
+    .item3 .block1 .inside, .item3 .block2 .inside, .item3 .block3 .inside, .item3 .block4 .inside, .item3 .block5 .inside{
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .item3 .block1 .inside .part1 .part1-inside .txt1, .item3 .block1 .inside .part3 .part3-inside .txt2, .item3 .block2 .inside .part1 .part1-inside .txt1, .item3 .block2 .inside .part3 .part3-inside .txt2{
+        line-height: 26px;
+    }
+    .item3 .block1 .inside .part1 .part1-inside, .item3 .block1 .inside .part3 .part3-inside, .item3 .block2 .inside .part1 .part1-inside, .item3 .block2 .inside .part3 .part3-inside{
+        width: 295px;
+        height: 378px;
+        padding: 37px;
+        margin-bottom:0;
+    }
+    .item3 .block1 .inside .part1 .part1-inside .number1, .item3 .block1 .inside .part1 .part1-inside .number2, .item3 .block1 .inside .part3 .part3-inside .number3, .item3 .block1 .inside .part3 .part3-inside .number4, .item3 .block2 .inside .part1 .part1-inside .number1, .item3 .block2 .inside .part1 .part1-inside .number2, .item3 .block2 .inside .part3 .part3-inside .number3, .item3 .block2 .inside .part3 .part3-inside .number4, .item3 .block2 .inside .part3 .part3-inside .number5{
+        font-size: 16px;
+    }
+    .item3 .block1 .inside .part1 .part1-inside img, .item3 .block1 .inside .part3 .part3-inside img, .item3 .block2 .inside .part1 .part1-inside img, .item3 .block2 .inside .part3 .part3-inside img{
+        max-width: 255px;
+        max-height: 138px;;
+    }
+
+    .inside .sp .btn-slideshow{
+        position: relative;
+        width: 188px;
+        display: flex;
+        justify-content: space-between;
+        margin:20px auto
+    }
+    .sp .content-sp{
+        display: grid;
+    }
+    .inside .sp .btn-slideshow button.slick-prev{
+        content:"";
+        background: url("assets/Path 4820.svg");
+        width: 12px;
+        height: 21px;
+
+    }
+    .inside .sp .btn-slideshow button.slick-prev:before{
+        content:"";
+    }
+    .inside .sp .btn-slideshow button.slick-next{
+        content:"";
+        background: url("assets/Path 4821.svg");
+        width: 12px;
+        height: 21px;
+
+    }
+    .inside .sp .btn-slideshow button.slick-next:before{
+        content:"";
+    }
+    .inside .sp .btn-slideshow ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: calc(100% - 53px);
+        padding-left:30px;
+    }
+    .inside .sp .btn-slideshow li a{ 
+        content: "";
+        position:absolute;
+        width: 18px;
+        border-top:2px solid #D8D8D8;
+        top: calc(100% - 23px);
+    }
+    .inside .sp .btn-slideshow li a.check.active{
+        border-top:4px solid #E59601;
+    }
+    .inside .sp .part1 .part1-inside, .inside .sp .part3 .part3-inside{
+        margin: 0 auto;
+    }
+    .inside .sp .btn-slideshow .slick-dots li {
+        height: 0;
+    }
+    .inside .sp .btn-slideshow .slick-dots li button{
+        height: 0;
+    }
+    .inside .sp .btn-slideshow .slick-dots li button:before{
+        content:"";
+        border-top: 2px solid #D8D8D8;
+        height:1px;
+        width: 18px;
+        opacity: 1;
+        top:calc(100% - 24px);
+    }
+    .inside .sp .btn-slideshow .slick-dots li button:focus:before{
+        border-top: 3px solid #E59601;
+    }
+}   
